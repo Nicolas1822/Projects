@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body onload="onload()">
+    <div id="container">
+        <div class="block__dark">
+            <div id="location"></div>
+            <div id="date"></div>
+            <div id="description"></div>
+        </div>
+        <div class="block__clear">
+            <div class="block__information">
+                <span>temperature</span>
+                <div class="block__information--space" id="temperature"></div>
+            </div>
+            <div class="block__information">
+                <span>pressure</span>
+                <div class="block__information--space" id="pressure"></div>
+            </div>
+            <div class="block__information">
+                <span>humidity</span>
+                <div class="block__information--space" id="humidity"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="loader" class="loader">Loading...</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
